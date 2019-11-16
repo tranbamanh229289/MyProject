@@ -12,7 +12,7 @@
 (cd "Paste the copied address " 
 python "namecode.py")
 
-3.Data : Dataset Iris Flower for 4 algorithms .
+3.Data : Dataset Iris Flower for 4 feautures .I do not use the "Pearson" correlation coefficient because the data has been cleaned. I will get all 4 features .I use 100 data points to train .50 data points to test and evaluate.
 
 4.Problem requirements: From the Iris flower dataset, build classification models using the KNN algorithm, Decision trees algorithm, Naive bayes algorithm ,SVM algorithm
 
