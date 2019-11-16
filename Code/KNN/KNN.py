@@ -28,7 +28,6 @@ N=Y_test.shape[0]
 #Standardize training input data
 X_train=np.array(data_train[:,1:5],dtype=np.float64)
 
-#K=1
 def KNN (X_train ,X_test,Y_train,K):
     loss=[]
     list=[]
