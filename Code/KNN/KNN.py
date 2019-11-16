@@ -56,4 +56,6 @@ def Correct_Ratio (Y_test,list):
 
 list,loss=KNN(X_train,X_test,Y_train,10)
 
+print ("Classes of test data points:",Y_test)
+print ("Classification results based on the KNN algorithm:",list)
 print ("The accuracy ratio of the algorithm is: :",round(Correct_Ratio(Y_test,list),2),"%")
