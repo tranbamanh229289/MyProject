@@ -14,5 +14,5 @@ python "namecode.py")
 
 3.Data : Dataset Iris Flower for 4 algorithms .
 
-4.Problem requirements: From the Iris flower dataset, build classification models using the KNN algorithm, Decision trees, Naive bayes
+4.Problem requirements: From the Iris flower dataset, build classification models using the KNN algorithm, Decision trees algorithm, Naive bayes algorithm ,SVM algorithm
 
