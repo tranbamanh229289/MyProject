@@ -12,10 +12,11 @@
 (cd "Paste the copied address " 
 python "namecode.py")
 
-3.Data : Dataset Iris Flower for 4 feautures .I use 100 data points to train .50 data points to test and evaluate.
 
-4.Preprocessing data :
-* Missing values :Data set: full data, not missing .No need to handle missing data.  
+3.Al KNN:
+*Data : Dataset Iris Flower for 4 feautures .I use 100 data points to train .50 data points to test and evaluate.
+*Preprocessing data :Missing values :Data set: full data, not missing .No need to handle missing data.  
+*Problem requirements: From the dataset of iris flowers, build a model for classifying 3 types of flowers: "Setona", "Versicolor", "Virginica" using KNN.
+4. Al Naive Bayes :
+* Data : Dataset weather 
 
-
-5.Problem requirements: From the dataset of iris flowers, build a model for classifying 3 types of flowers: "Setona", "Versicolor", "Virginica" using 4 algorithms: KNN, Decision Tree, Navei Bayes, SVM.
