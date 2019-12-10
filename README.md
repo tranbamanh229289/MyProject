@@ -18,5 +18,9 @@ python "namecode.py")
 * Problem requirements: From the dataset of iris flowers, build a model for classifying 3 types of flowers: "Setona", "Versicolor", "Virginica" using KNN.
 
 5.Al Naive Bayes :
-* Data : Dataset weather 
+* Data : Dataset weather has 4 features: outlook , temperature,humidity,wind  . Each feauture has attibutes as: sunny,rainy,cool,hot , strong, weak ,high...
+* Preprocessing data :
+* I use the Naive Bayes algorithm for classification problems, to decide whether or not to play?.
+In the "Naive Bayes" algorithm, it depends a lot on the distribution P (x | c). There are 3 models to calculate P (x | c): Gaussian Naive Bayes, Multinomial Naive Bayes, Bernoulli Naive Bayes. My project uses the Multinomia model.
+* Result:The model was not very accurate(75%).The model was not very accurate. The reason is the small training data set.
 
