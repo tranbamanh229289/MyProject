@@ -16,7 +16,8 @@ python "namecode.py")
 * Data : Dataset Iris Flower for 4 feautures .I use 100 data points to train .50 data points to test and evaluate.
 * Preprocessing data :Missing values :Data set: full data, not missing .No need to handle missing data.  
 * Problem requirements: From the dataset of iris flowers, build a model for classifying 3 types of flowers: "Setona", "Versicolor", "Virginica" using KNN.
-* Result :This algorithm is quite effective and easy to deploy.
+* Result :This algorithm is quite effective and easy to deploy.In essence, this model does not learn anything from data.
+Thí Al can be used in 2 types of classification and regression . 
 
 5.Al Naive Bayes :
 * Data : Dataset weather has 4 features: outlook , temperature,humidity,wind  . Each feauture has attibutes as: sunny,rainy,cool,hot , strong, weak ,high...
