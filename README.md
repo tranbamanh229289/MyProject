@@ -35,7 +35,7 @@ Thí Al can be used in 2 types of classification and regression .
 * I use a decision tree model, which uses the ID3 algorithm for my problem,to decide whether or not to play?.
 * In decision trees,leaf nodes will have data points of the same layer. So you must understand the terms "entropy" and "information gain" (read more) to to classify well .We need to build a decision tree so that the leaf nodes will have entropy = 0 or approximately 0 to ensure the data points in the leaf nodes are clean.So it is important to choose the order of the nodes in the decision tree. Each node is an attribute.Any node with a large information gain will be arranged in advance for rapid division, and the entropy of the nodes will decrease as quickly as possible.
 * In ID3, if we continue to divide forever, then our decision tree will be very complex, many leaf nodes have only 1 or 2 data points. To overcome this, we will have the stopping conditions:
-** The depth of the node must be limited.
-** The division of that node does not reduce entropy too much will be stopped
-** that node has fewer elements than the threshold.
+* The depth of the node must be limited.
+* The division of that node does not reduce entropy too much will be stopped
+* that node has fewer elements than the threshold.
 
