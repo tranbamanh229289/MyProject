@@ -1,7 +1,7 @@
 ## MyProject
 1. How to export the environment:
 * Activate the environment: conda activate "name env "
-* Save env to file : conda export env > "name file ".yml
+* Save env to file : conda export env -f > "name file ".yml
 
 2.How to create environment with my file .yaml :Dowload my file .yaml Then open conda prompt command :conda env create  -f "name file ".yml
 
