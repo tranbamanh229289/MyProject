@@ -16,8 +16,8 @@ python "namecode.py")
 * Data : Dataset Iris Flower for 4 feautures .I use 100 data points to train .50 data points to test and evaluate.
 * Preprocessing data :Missing values :Data set: full data, not missing .No need to handle missing data.  
 * Problem requirements: From the dataset of iris flowers, build a model for classifying 3 types of flowers: "Setona", "Versicolor", "Virginica" using KNN.
-* Result :This algorithm is quite effective and easy to deploy.In essence, this model does not learn anything from data.
-Thí Al can be used in 2 types of classification and regression . 
+* Evaluating algorithm results:This algorithm is quite effective and easy to deploy.In essence, this model does not learn anything from data.
+* This Al can be used in 2 types of classification and regression . 
 
 5.Al Naive Bayes :
 * Data : Dataset weather has 4 features: outlook , temperature,humidity,wind  . Each feauture has attibutes as: sunny,rainy,cool,hot , strong, weak ,high...
@@ -27,7 +27,7 @@ Thí Al can be used in 2 types of classification and regression .
 * Multinomial Naive Bayes :This model is often used in text classification models.
 * Gaussian Naive Bayes :Use in data model is continuous variable ,
 * Bernoulli Naive Bayes: This model is applied to data types where each component is a binary value - equal to 0 or 1.
-* Result:The model was not very accurate(75%). The reason is that this algorithm is heavily based on the train dataset .If there is little data, the algorithm will not be effective.This algorithm has no machine learning.
+* Evaluating algorithm results:The model was not very accurate(75%). The reason is that this algorithm is heavily based on the train dataset .If there is little data, the algorithm will not be effective.This algorithm has no machine learning.
 
 6.AI Decision Tree :
 * Data : Dataset weather has 4 features: outlook , temperature,humidity,wind  . Each feauture has attibutes as: sunny,rainy,cool,hot , strong, weak ,high...
@@ -38,4 +38,5 @@ Thí Al can be used in 2 types of classification and regression .
 * The depth of the node must be limited.
 * The division of that node does not reduce entropy too much will be stopped
 * that node has fewer elements than the threshold.
+* Evaluating algorithm results: The algorithm depends heavily on training data. The biggest drawback of ID3 and the decision tree is generally that if a new data point falls into the wrong branch at the first split, the end result will be different. so many, so much .
 
