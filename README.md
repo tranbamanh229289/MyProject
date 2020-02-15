@@ -44,6 +44,7 @@ python "namecode.py")
 - Data :Self-created in code.I use the normal distribution and covariance matrix to create data.
 - The SVM algorithm group has the following algorithms:
   - Hard Magins:  With "linearly separable" data .Bringing issues about convex planning format.Then the problem is solved in 2 ways. Method 1 is calculated directly and satisfies Slayter and regular conditions as convex objective function and constraint set as convex set. Then deduce that the solution of the problem is the solution of the system "K K T".Method 2 approaches the problem by solving a simpler problem. The problem of finding the max is the solution of the other problem to find min. I use this method 2 because method 1 solves it directly, I have to solve the "KKT" system: it is very complicated and not feasible. Because the number of equations and number of cases of the "KKT" system is too big .For method 2, I use the CVXOPT library to solve the convex optimization problem.
+  =>This algorithm effectively classifies
   - Soft Magins : With data problems near "linearly separable".Similar to Hard Margins. The objective function of this problem is to add the sacrifices of the noise data points.
   - Kernel SVM :With "nonlinearly separable" data
   -Multi-Layer : With multi-layered classification problem
