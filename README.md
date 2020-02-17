@@ -41,10 +41,11 @@ python "namecode.py")
 * Evaluating algorithm results: The algorithm depends heavily on training data. The biggest drawback of ID3 and the decision tree is generally that if a new data point falls into the wrong branch at the first split, the end result will be different. so many, so much .
 
 7. Ai Group SVM :
-- Data :Self-created in code.I use the normal distribution and covariance matrix to create data.
-- The SVM algorithm group has the following algorithms:
-  - Hard Magins:  With "linearly separable" data .Bringing issues about convex planning format.Then the problem is solved in 2 ways. Method 1 is calculated directly and satisfies Slayter and regular conditions as convex objective function and constraint set as convex set. Then deduce that the solution of the problem is the solution of the system "K K T".Method 2 approaches the problem by solving a simpler problem. The problem of finding the max is the solution of the other problem to find min. I use this method 2 because method 1 solves it directly, I have to solve the "KKT" system: it is very complicated and not feasible. Because the number of equations and number of cases of the "KKT" system is too big .For method 2, I use the CVXOPT library to solve the convex optimization problem.
-  =>This algorithm effectively classifies
-  - Soft Magins : With data problems near "linearly separable".Similar to Hard Margins. The objective function of this problem is to add the sacrifices of the noise data points.
-  - Kernel SVM :With "nonlinearly separable" data
-  -Multi-Layer : With multi-layered classification problem
+- Data: Self-created in code I use the normal distribution matrix and covariance to generate data.
+-The nature of this algorithm calculates Weight and Bias based on points called "Support Vectors Margins". These points are in Margins for C> "Lambda"> 0.
+- SVM algorithm group has the following algorithms:
+- Hard Magins: With data "linear separation". Issues related to convex planning format. Then the problem is solved in 2 ways. Method 1 is calculated directly and satisfies the Slayter and the usual conditions are convex target functions and constraints sets such as convex sets. It is then deduced that the solution of the problem is that of the "K K T" system. Merod 2 approaches the problem by solving a simpler problem. The problem of finding the max is the solution of the other problem to find the min. To solve the new problem, I apply the properties of the "EZ" system and calculate "Lambda", "Weight", "Bias". I use the method This is because method 1 deals directly, I have to solve the "EZ" directly: it is very complicated and not feasible. Because the number of equations and the number of cases of the "EZ" system is too large. Method 2, I use CVXOPT library to solve the convex optimization problem.
+=> This algorithm classifies efficiency
+- Soft Magins: With data problems near "can be linearly split". Like Hard Margins. The objective function of this problem is to add the sacrifice of noise data points.This algorithm has 2 approaches. 1 refers to the traditional lagrange duality problem. 2 is to bring the nonlinear planning problem into a non-linear nonlinear planning problem. Then optimize the loss function, finally using the gradient desent to update the weight.
+- Kernel SVM: With "inseparable" data
+-Multi-Layer: With multi-layer classification problem
